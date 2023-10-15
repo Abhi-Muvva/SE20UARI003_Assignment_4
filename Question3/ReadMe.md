@@ -19,11 +19,13 @@ The code uses a pre-trained ResNet-50 model as a base model. The pre-trained wei
 A Global Average Pooling layer is added to reduce spatial dimensions.
 A fully connected Dense layer with 1024 units and ReLU activation is added.
 The final output layer consists of two units for binary classification (cat or dog) with a softmax activation.
-Training
+
+## Training
 The model is compiled using the Stochastic Gradient Descent (SGD) optimizer with a low learning rate (0.0001) and momentum.
 Categorical cross-entropy is used as the loss function for multi-class classification.
 The model is trained for 10 epochs using the training and validation data generators.
-Save Model
+
+## Save Model
 The trained model is saved as 'cat_vs_dog_resnet50.h5'.
 
 ## Usage
